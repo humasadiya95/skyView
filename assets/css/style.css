@@ -379,13 +379,13 @@ h1, h2, h3, h4, h5, h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #1f2627;
-  padding: 0 0 30px 0;
+  background: #212121;
+  padding: 0 0 10px 0;
   color: #fff;
   font-size: 14px;
 }
 #footer .footer-top {
-  background: #2a3336;
+  background: #212121;
   border-bottom: 1px solid #354144;
   padding: 60px 0 30px 0;
 }
@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #354144;
+  /* background: #354144; */
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #01b1d7;
+  /* background: #01b1d7; */
   color: #fff;
   text-decoration: none;
 }
@@ -430,10 +430,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #fff;
   position: relative;
-  padding-bottom: 12px;
+  /* padding-bottom: 12px; */
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+}
+#footer .footer-top .footer-links h4 {
+  padding-bottom: 10px;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -464,9 +467,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #27d8fe;
 }
 #footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
+  margin-bottom: 30px;
+  /* background: #fff;
+  padding: 6px 10px; */
   position: relative;
   border-radius: 4px;
 }
@@ -494,11 +497,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 #footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/* new css  */
+.pl-90 {
+  padding-left: 90px;
+}
+
+.pr-50 {
+  padding-right: 50px;
 }
