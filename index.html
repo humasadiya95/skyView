@@ -134,7 +134,97 @@
       <p class="hero-test">Visit Skyview, Discover Patnitop</p>
     </div>
   </section>
-  <section class="tab-lists"></section>
+
+  <!-- ======= Banner ======= -->
+  
+  <section class="tab-lists">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="home-tab" data-toggle="tab" href="#Activities" role="tab" aria-controls="home" aria-selected="true">Activities</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#accomodation" role="tab" aria-controls="profile" aria-selected="false">Skyview Accomodation</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#experiences" role="tab" aria-controls="contact" aria-selected="false">Skyview Partner Experiences</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade" id="Activities" role="tabpanel" aria-labelledby="home-tab">Activities</div>
+      <div class="tab-pane fade show active" id="accomodation" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="filters">
+          <form>
+            <div class="filter-wrapper">
+              <div class="form-group">
+                <label for="Arrive">ARRIVE</label>
+                <div class="filter-item">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="drop-arrow">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Depart">DEPART</label>
+                <div class="filter-item">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="drop-arrow">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">ADULTS (18+)</label>
+                <div class="select-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <span class="drop-arrow">
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">CHILDREN</label>
+                <div class="select-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <span class="drop-arrow">
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">NUMBER OF ROOMS</label>
+                <div class="select-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <span class="drop-arrow">
+                  </span>
+                </div>
+              </div>
+              <button type="submit" class="succuss-btn">Search</button>
+          </form>
+        </div>
+        <div class="filter-heading">One Destination <span class="green-text">Endless Experiences</span></div>
+      </div>
+      <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="contact-tab">Skyview Partner Experiences</div>
+    </div>
+  </section>
 
   <main id="main">
 
@@ -215,6 +305,7 @@
     </section>
 
     <!-- ======= Discover Section ======= -->
+
     <section class="discover">
       <div class="container">
         <div class="row">
@@ -222,9 +313,86 @@
             <div class="discover-inner-text">
               <p class="title">At Skyview, Discover</p>
               <p class="discovery-bold">India’s Highest Gondola</p>
+              <button type="button" class="succuss-btn">Discover Skyview Gondola</button>
             </div>
-            <div class=""
+            <div class="discover-images">
+              <div class="image-1">
+                <img src="./assets/img/discover-img-1.png" alt="discover_1" />
+              </div>
+              <div class="image-2">
+                <img src="./assets/img/discover-img-2.png" alt="discover_2" />
+              </div>
+            </div>
           </div>  
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= universe Section ======= -->
+
+    <section class="universe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="sky-universe-card">
+              <p class="title">The Skyview Universe</p>
+              <p class="descriptions">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aperiendum est igitur, quid sit </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sky-cards">
+              <div class="image-wrap">
+                <img src="./assets/img/universe-img-1.png" alt="" />
+              </div>
+              <div class="card-description">
+                <p>Skyview World
+                  by Empyrean</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sky-cards">
+              <div class="image-wrap">
+                <img src="./assets/img/universe-img-2.png" alt="" />
+              </div>
+              <div class="card-description">
+                <p>Skyview Gondola by Empyrean</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sky-cards">
+              <div class="image-wrap">
+                <img src="./assets/img/universe-img-3.png" alt="" />
+              </div>
+              <div class="card-description">
+                <p>Skyview World
+                  by Empyrean</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sky-cards">
+              <div class="image-wrap">
+                <img src="./assets/img/universe-img-4.png" alt="" />
+              </div>
+              <div class="card-description">
+                <p>Skyview World
+                  by Empyrean</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sky-cards">
+              <div class="image-wrap">
+                <img src="./assets/img/universe-img-5.png" alt="" />
+              </div>
+              <div class="card-description">
+                <p>Skyview Adventure
+                  Valley</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -257,7 +425,9 @@
               <div class="col-lg-12 col-md-6 footer-newsletter">
                 <h4>Subscribe to our newsletter</h4>
                 <form action="" method="post">
-                  <input type="email" name="email" placeholder="Email Address"> <input type="submit" value="Subscribe">
+                  <div class="new-subscribe">
+                    <input class="newsletter-input" type="email" name="email" placeholder="Email Address"> <input class="succuss-btn" type="submit" value="Subscribe">
+                  </div>
                 </form>
               </div>
             </div>

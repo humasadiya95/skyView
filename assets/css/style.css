@@ -54,7 +54,7 @@ h2{
 }
 
 
-button.succuss-btn{
+button.succuss-btn, .succuss-btn{
   background: url('../img/btn-bg.png');
   height: 45px;
   width: auto;
@@ -66,7 +66,20 @@ button.succuss-btn{
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  padding: 6px 12px;
+  padding: 6px 28px;
+}{
+  background: url('../img/btn-bg.png');
+  height: 45px;
+  width: auto;
+  min-width: 142px;
+  position: relative;
+  border: none;
+  background-size: cover;
+  background-position: right;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 28px;
 }
 
 /*--------------------------------------------------------------
@@ -373,6 +386,9 @@ button.succuss-btn{
   background-position: 0px -121px;
   position: relative;
 }
+.banner-about{
+  background: url(../img/aboutUsBanner.png);
+}
 .banner .hero-section{
   position: absolute;
   max-width: 590px;
@@ -479,10 +495,214 @@ button.succuss-btn{
 }
 
 /*--------------------------------------------------------------
+# Tab list css
+--------------------------------------------------------------*/
+.filters{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 43px 0;
+}
+.filters .filter-wrapper{
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+.filters .filter-wrapper .form-group{
+  margin-right: 16px;
+}
+.filters .filter-wrapper .form-group label{
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+.tab-lists .nav-tabs li{
+  flex: 1;
+  -wekit-flex: 1;
+  text-align: center;
+  height: 79px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.tab-lists .tab-content{
+  background: #EEEEEE;
+}
+.tab-lists ul.nav-tabs{
+  border-bottom: none;
+} 
+.tab-lists .nav-tabs li:last-child{
+  border-right: none;
+}
+.tab-lists .nav-tabs li a{
+  color: #333333;
+  font-weight: 700;
+  font-size: 16px;
+}
+.tab-lists .nav-tabs li.nav-item .nav-link.active{
+  color: #3EA730;
+  border: none;
+  position: relative;
+}
+.tab-lists .nav-tabs li.nav-item .nav-link.active:before{
+  content: '';
+  width: calc(100% - 30px);
+  height: 2px;
+  background: #3EA730;
+  position: absolute;
+  bottom: 4px;
+}
+
+.filter-heading{
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 34px;
+  text-align: center;
+}
+.filter-heading .green-text{
+  color: #3EA730;
+}
+.filters input{
+  height: 45px;
+  border-radius: 0;
+  border: 1px solid #333333;
+}
+.filters .filter-item .drop-arrow{
+  width: 57px;
+  height: 45px;
+  background: #333333;
+  background-image: url('../img/down-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+
+}
+.filters .filter-item .date{
+  width: 174px;
+}
+.filters .select-group{
+  position: relative;
+}
+.filters .select-group select{
+  height: 45px;
+  border-radius: 0;
+  border: 1px solid #333333;
+  width: 119px;
+  padding-right: 58px;
+}
+.filters .select-group .drop-arrow{
+  width: 57px;
+  height: 45px;
+  background: #333333;
+  background-image: url('../img/down-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+
+}
+
+/*--------------------------------------------------------------
 # Discover css
 --------------------------------------------------------------*/
 .discover{
   background: url(../img/explore-bg.png);
+  padding: 78px 0;
+  margin-top: 103px;
+  background-repeat: no-repeat;
+}
+.discover .discover-inner-text .title{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.discover .discover-inner-text .discovery-bold{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #fff;
+  margin-bottom: 13px;
+  max-width: 538px;
+}
+.discover-inner{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.discover-images{
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+  left: 82px;
+}
+.discover-images .image-1{
+  position: relative;
+  z-index: 9;
+}
+.discover-images .image-2{
+  position: relative;
+  z-index: 1;
+  left: -92px;
+  top: 45px;
+}
+
+/*--------------------------------------------------------------
+# Universe card css
+--------------------------------------------------------------*/
+.universe{
+  margin-top: 118px;
+}
+.sky-universe-card .title{
+  font-size: 30px;
+  color: #333333;
+  font-weight: 900;
+  margin-bottom: 10px;
+  max-width: 196px;
+  line-height: 41px;
+}
+.sky-universe-card .descriptions{
+  margin-bottom: 0;
+  max-width: 285px;
+}
+.card-description {
+  padding: 27px 36px;
+  background: #3EA730;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  height: 110px;
+}
+.card-description  p{
+  margin: 0;
+  max-width: 220px;
+  font-weight: 700;
+}
+.sky-cards .image-wrap{
+  text-align: center;
+  background: #d0cccc;
+  height: 191px;
+  overflow: hidden;
+}
+.sky-cards{
+  margin-bottom: 30px;
+}
+.sky-universe-card {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
 @media (max-width: 1439px) {
@@ -740,7 +960,7 @@ button.succuss-btn{
   padding: 4px;
   width: calc(100% - 130px);
 }
-#footer .footer-top .footer-newsletter form input[type=submit] {
+/* #footer .footer-top .footer-newsletter form input[type=submit] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -753,9 +973,18 @@ button.succuss-btn{
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
-}
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+} */
+/* #footer .footer-top .footer-newsletter form input[type=submit]:hover {
   background: #0187a4;
+} */
+
+.new-subscribe{
+  display: flex;
+  display: -webkit-flex;
+}
+.new-subscribe .newsletter-input{
+  height: 45px;
+  margin-right: 16px;
 }
 #footer .copyright {
   text-align: center;
@@ -771,6 +1000,14 @@ button.succuss-btn{
 /* new css  */
 .pl-90 {
   padding-left: 90px;
+}
+
+.pl-120 {
+  padding-left: 120px;
+}
+
+.pr-120 {
+  padding-right: 120px;
 }
 
 .pr-50 {
