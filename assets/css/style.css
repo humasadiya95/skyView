@@ -67,20 +67,7 @@ button.succuss-btn, .succuss-btn{
   font-weight: 500;
   color: #fff;
   padding: 6px 28px;
-}{
-  background: url('../img/btn-bg.png');
-  height: 45px;
-  width: auto;
-  min-width: 142px;
-  position: relative;
-  border: none;
-  background-size: cover;
-  background-position: right;
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  padding: 6px 28px;
-}
+} 
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -389,6 +376,9 @@ button.succuss-btn, .succuss-btn{
 .banner-about{
   background: url(../img/aboutUsBanner.png);
 }
+.banner-activities{
+  background: url(../img/banner-activities.png);
+}
 .banner .hero-section{
   position: absolute;
   max-width: 590px;
@@ -653,6 +643,9 @@ button.succuss-btn, .succuss-btn{
   left: -92px;
   top: 45px;
 }
+.discover-activity-img img{
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Universe card css
@@ -705,6 +698,142 @@ button.succuss-btn, .succuss-btn{
   -webkit-justify-content: center;
 }
 
+/*--------------------------------------------------------------
+# Universe card css
+--------------------------------------------------------------*/
+
+.quotations{
+  max-width: 683px;
+  text-align: center;
+  margin: 136px auto 0;
+}
+.quotations img.double-quote{
+  margin-bottom: 35px;
+}
+.advisor{
+  margin: 35px 0 8px 0;
+}
+.quotations .sm-text{
+  font-size: 13px;
+  color:#333333;
+  font-weight: 700;
+  line-height: 20px;
+  max-width: 264px;
+  margin: 0 auto;
+}
+
+.quotations blockquote {
+  color: #3EA730;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 47px;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Universe card css
+--------------------------------------------------------------*/
+
+.Partners{ margin-top: 100px;}
+.Partners .partner-list-group { 
+  display: flex;
+  display: -webkit-flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Partners .about-partner{
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  min-width: 355px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-end;
+  padding-right: 58px;
+}
+.Partners .about-partner p{
+  max-width: 159px;
+  color: #333333;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: right;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.Partners .partner-list-group .lists ul{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin-bottom: 0;
+  padding: 24px 0;
+}
+.Partners .partner-list-group .lists ul li{
+  list-style: none;
+  margin-left: 38px;
+}
+
+
+/*--------------------------------------------------------------
+# card css
+--------------------------------------------------------------*/
+
+.image-card{
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+  margin-top: 64px;
+}
+.image-card .description{
+  background: #EEEEEE;
+  min-height: 440px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  width: calc(100% - 340px);
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.image-card .description .description-inn{
+  max-width: 388px;
+  margin-left: 152px;
+}
+.image-card .description .description-inn .title{
+  color: #3EA730;
+  font-weight: 800;
+  line-height: 43px;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.image-card .description .description-inn .about{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #222222;
+  margin-bottom: 14px
+}
+.image-card .image-part{
+  position: absolute;
+  right: 0;
+  top: calc(50% - 145px);
+}
+.image-card .image-part img{
+  max-height: 290px;
+}
+.image-card.right-img .description{
+  margin-left: 340px;
+}
+.image-card.right-img .description .description-inn{
+  margin-left: 135px;
+} 
+.image-card.right-img .image-part{
+  left: 0;
+  right: auto;
+}
+
 @media (max-width: 1439px) {
   #header .logo::before{
     width: 214px;
@@ -715,7 +844,15 @@ button.succuss-btn, .succuss-btn{
   .navbar a, .navbar a:focus{
     padding: 10px 0 10px 20px;
   }
-
+  .Partners .about-partner{
+    min-width: 252px;
+  }
+  .Partners .partner-list-group .lists ul li{
+    margin-left: 30px;
+  }
+  .image-card .description .description-inn{
+    margin-left: 0;
+  }
 }
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
@@ -868,8 +1005,20 @@ button.succuss-btn, .succuss-btn{
 }
 #footer .footer-top {
   background: #212121;
-  border-bottom: 1px solid #354144;
+  /* border-bottom: 1px solid #354144; */
   padding: 60px 0 30px 0;
+}
+.footer-bottom{
+  position: relative;
+}
+.footer-bottom::before{
+  content: '';
+  background: #ffffff;
+  width: calc(100% - 24px);
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 12px;
 }
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
@@ -987,7 +1136,7 @@ button.succuss-btn, .succuss-btn{
   margin-right: 16px;
 }
 #footer .copyright {
-  text-align: center;
+  text-align: left;
   padding-top: 10px;
 }
 #footer .credits {
