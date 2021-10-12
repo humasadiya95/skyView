@@ -1193,4 +1193,19 @@ button.succuss-btn, .succuss-btn{
   color: #ffffff;
 }
 
+/*--------------------------------------------------------------
+# bottom banner with blur css
+--------------------------------------------------------------*/
 
+.bottom-banner .center-div{
+  width: 75%;
+  background: rgba(143, 143, 143, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 30px 80px;
+
+}
+.bottom-banner .text-wrap{
+  max-width: 45%;
+}
