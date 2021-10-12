@@ -648,6 +648,9 @@ button.succuss-btn, .succuss-btn{
 .discover-activity-img img{
   width: 100%;
 }
+.discover-back-cover{
+  background-size: cover;
+}
 
 /*--------------------------------------------------------------
 # Universe card css
