@@ -386,6 +386,12 @@ button.succuss-btn, .succuss-btn{
 .banner-accomodation{
   background: url(../img/banner-accomodation.png);
 }
+.banner-foodies{
+  background: url(../img/foodies-banner.png);
+}
+.banner-hands-of-gold{
+  background: url(../img/hands-of-gold-banner.png);
+}
 .banner .hero-section{
   position: absolute;
   max-width: 590px;
@@ -615,6 +621,10 @@ button.succuss-btn, .succuss-btn{
   margin-top: 103px;
   background-repeat: no-repeat;
 }
+.discover-valley{
+  background: url(../img/valley-bottom-banner.png);
+}
+
 .discover .discover-inner-text .title{
   font-size: 16px;
   font-weight: 700;
@@ -1200,7 +1210,7 @@ button.succuss-btn, .succuss-btn{
 .bottom-banner .center-div{
   width: 75%;
   background: rgba(143, 143, 143, 0.15);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   color: #ffffff;
   padding: 30px 80px;
@@ -1208,4 +1218,12 @@ button.succuss-btn, .succuss-btn{
 }
 .bottom-banner .text-wrap{
   max-width: 45%;
+}
+
+/*--------------------------------------------------------------
+# Simple text section css
+--------------------------------------------------------------*/
+
+.simple-text-section {
+  margin-top: 80px;
 }
