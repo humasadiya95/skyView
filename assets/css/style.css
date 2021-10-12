@@ -26,6 +26,10 @@ body {
   color: #444444;
 }
 
+.container {
+  max-width: 1199px;
+}
+
 a {
   color: #01b1d7;
   text-decoration: none;
@@ -378,6 +382,9 @@ button.succuss-btn, .succuss-btn{
 }
 .banner-activities{
   background: url(../img/banner-activities.png);
+}
+.banner-accomodation{
+  background: url(../img/banner-accomodation.png);
 }
 .banner .hero-section{
   position: absolute;
@@ -804,13 +811,20 @@ button.succuss-btn, .succuss-btn{
 }
 .image-card .description .description-inn{
   max-width: 388px;
-  margin-left: 152px;
+  /* margin-left: 152px; */
 }
 .image-card .description .description-inn .title{
   color: #3EA730;
   font-weight: 800;
   line-height: 43px;
   font-size: 32px;
+  margin-bottom: 12px;
+}
+.image-card .description .description-inn .subTitle{
+  color: #222222;
+  font-weight: 800;
+  line-height: 160.6%;
+  font-size: 22px;
   margin-bottom: 12px;
 }
 .image-card .description .description-inn .about{
@@ -827,6 +841,7 @@ button.succuss-btn, .succuss-btn{
 }
 .image-card .image-part img{
   max-height: 290px;
+  min-width: 475px;
 }
 .image-card.right-img .description{
   margin-left: 340px;
