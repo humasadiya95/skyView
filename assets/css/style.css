@@ -404,6 +404,18 @@ button.succuss-btn, .succuss-btn{
   background: url(../img/hands-of-gold-banner.png);
   background-size: cover;
 }
+.banner-gondola{
+  background: url(../img/gondola-banner.png);
+  background-size: cover;
+}
+.banner-partner{
+  background: url(../img/partner-banner.png);
+  background-size: cover;
+}
+.banner-attraction{
+  background: url(../img/attraction-banner.png);
+  background-size: cover;
+}
 .banner .hero-section{
   position: absolute;
   max-width: 590px;
@@ -646,6 +658,10 @@ button.succuss-btn, .succuss-btn{
   background: url(../img/hand-of-bottom-banner.png);
 }
 
+.discover-gondola{
+  background: url(../img/gondola-bottom-banner.png);
+}
+
 .discover .discover-inner-text .title{
   font-size: 16px;
   font-weight: 700;
@@ -726,6 +742,13 @@ button.succuss-btn, .succuss-btn{
   background: #d0cccc;
   height: 191px;
   overflow: hidden;
+}
+.image-wrap img{
+  width: 100%;
+}
+.sky-cards .text-desc{
+  margin-top: 10px;
+  font-weight: 800;
 }
 .sky-cards{
   margin-bottom: 30px;
@@ -865,6 +888,25 @@ button.succuss-btn, .succuss-btn{
   color: #222222;
   margin-bottom: 14px
 }
+
+.image-card .description .description-inn .icon-wrap{
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.image-card .description .description-inn  .icon-text .icon-title{
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.image-card .description .description-inn  .icon-text .desc{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
 .image-card .image-part{
   position: absolute;
   right: 0;
@@ -1291,6 +1333,9 @@ button.succuss-btn, .succuss-btn{
 }
 
 /* new css  */
+/*--------------------------------------------------------------
+# common css
+--------------------------------------------------------------*/
 .pl-90 {
   padding-left: 90px;
 }
@@ -1317,6 +1362,9 @@ button.succuss-btn, .succuss-btn{
   color: #ffffff;
 }
 
+.text-right{
+  text-align: right;
+}
 /*--------------------------------------------------------------
 # bottom banner with blur css
 --------------------------------------------------------------*/
