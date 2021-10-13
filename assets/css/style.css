@@ -73,6 +73,11 @@ button.succuss-btn, .succuss-btn{
   padding: 6px 28px;
 } 
 
+.succuss-btn-full{
+  background: url('../img/btn-bg-full.png')!important;
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -635,6 +640,10 @@ button.succuss-btn, .succuss-btn{
 }
 .discover-valley{
   background: url(../img/valley-bottom-banner.png);
+}
+
+.discover-hands-of-gold{
+  background: url(../img/hand-of-bottom-banner.png);
 }
 
 .discover .discover-inner-text .title{
@@ -1215,7 +1224,7 @@ button.succuss-btn, .succuss-btn{
   font-size: 18px;
   line-height: 1;
 }
-#footer .footer-top .footer-links ul li {
+#footer .footer-top .footer-linhand-of-bottom-bannerks ul li {
   padding: 10px 0;
   display: flex;
   align-items: center;
