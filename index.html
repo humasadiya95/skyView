@@ -133,25 +133,25 @@
       <p class="small">Start your journey here</p>
       <p class="hero-test">Visit Skyview, Discover Patnitop</p>
     </div>
-  </section>
+  </section> 
 
   <!-- ======= Banner ======= -->
-  
   <section class="tab-lists">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="home-tab" data-toggle="tab" href="#Activities" role="tab" aria-controls="home" aria-selected="true">Activities</a>
+        <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="true">Activities</button>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#accomodation" role="tab" aria-controls="profile" aria-selected="false">Skyview Accomodation</a>
+        <button class="nav-link active" id="accomodation-tab" data-bs-toggle="tab" data-bs-target="#accomodation" type="button" role="tab" aria-controls="accomodation" aria-selected="false">Skyview Accomodation</button>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#experiences" role="tab" aria-controls="contact" aria-selected="false">Skyview Partner Experiences</a>
+        <button class="nav-link" id="experiences-tab" data-bs-toggle="tab" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">Skyview Partner Experiences</button>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade" id="Activities" role="tabpanel" aria-labelledby="home-tab">Activities</div>
-      <div class="tab-pane fade show active" id="accomodation" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">Activities</div>
+      <div class="tab-pane fade show active" id="accomodation" role="tabpanel" aria-labelledby="accomodation-tab">
+        <div>
         <div class="filters">
           <form>
             <div class="filter-wrapper">
@@ -217,12 +217,15 @@
                   </span>
                 </div>
               </div>
+              
               <button type="submit" class="succuss-btn">Search</button>
+            </div>
           </form>
         </div>
         <div class="filter-heading">One Destination <span class="green-text">Endless Experiences</span></div>
+        </div>
       </div>
-      <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="contact-tab">Skyview Partner Experiences</div>
+      <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">Skyview Partner Experiences</div>
     </div>
   </section>
 
@@ -603,6 +606,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
