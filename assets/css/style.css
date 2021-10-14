@@ -371,6 +371,57 @@ button.succuss-btn, .succuss-btn{
   visibility: visible;
 }
 
+.navbar.custom-header{
+  position: static;
+}
+.navbar.custom-header .parent-list{
+  position: static;
+}
+.navbar.custom-header .parent-list .sub-ul-list{
+  width: 100%;
+  left:0;
+  top: 100%;
+  background: #E2F2E0;
+  padding: 55px 0 34px;
+}
+.navbar.custom-header .parent-list .sub-ul-list a{
+  color: #222222;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar.custom-header .parent-list .sub-ul-list .sub-menu-list{
+    max-width: 866px;
+    margin: 0 auto;
+}
+.navbar.custom-header .parent-list .sub-ul-list .sub-menu-list .col-md-4{
+  padding-right: 52px;
+}
+.navbar.custom-header .parent-list .sub-ul-list .sub-menu-list .col-md-4 + .col-md-4 + .col-md-4{
+  padding-left: 0px;
+}
+.navbar.custom-header .parent-list .sub-ul-list .inner-list-wrap ul{
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: none;
+  background: transparent;
+  min-height: 92px;
+}
+.navbar.custom-header .parent-list .sub-ul-list .inner-list-wrap .title{
+  color: #3EA730;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 2px solid #222222;
+  padding: 0;
+  pointer-events: none;
+  margin: 0px 0 10px 0;
+  padding-bottom: 16px;
+}
+.navbar.custom-header .parent-list .sub-ul-list .inner-list-wrap ul li a{
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 /*--------------------------------------------------------------
 # Banner css
 --------------------------------------------------------------*/
@@ -996,6 +1047,121 @@ button.succuss-btn, .succuss-btn{
 }
 .adventure-place .img-6, .adventure-place .img-7, .adventure-place .img-8{
   margin-left: 26px;
+}
+
+/*--------------------------------------------------------------
+# Gondola ride css
+--------------------------------------------------------------*/
+
+.gondola-ride{
+  min-height: 460px;
+  position: relative;
+}
+.gondola-ride + .discover{
+  margin-top: -1px;
+}
+.gondola-ride .title-area .title{
+  font-size: 23px;
+  line-height: 36px;
+  font-weight: 800;
+  max-width: 635px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+.gondola-ride .title-area p{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  max-width: 635px;
+}
+.gondola-ride .title-area p:last-child {
+  margin-bottom: 0;
+}
+.gondola-ride-wrap {
+  display: flex;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  height: 564px;
+}
+.gondola-ride-wrap .title{
+  margin-bottom: 30px;
+}
+.gondola-ride-place{
+  display: flex;
+  display: -webkit-flex;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.gondola-ride-place .first-wrap{
+  margin-right: 26px;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+.gondola-ride-place .second-wrap{
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+.gondola-ride-place .third-wrap{
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+.gondola-ride-place .img-1{
+  margin-top: 164px;
+  margin-bottom: 26px;
+}
+.gondola-ride-place .img-3, .gondola-ride-place .img-4{
+  margin-bottom: 26px;
+}
+.gondola-ride-place .img-6, .gondola-ride-place .img-7{
+  margin-bottom: 26px;
+}
+.gondola-ride-place .img-6, .gondola-ride-place .img-7, .gondola-ride-place .img-8{
+  margin-left: 26px;
+}
+
+/*--------------------------------------------------------------
+# Gondola facts css
+--------------------------------------------------------------*/
+
+.gondola-facts{
+  background: #EEEEEE;
+  padding: 70px 0 99px 0;
+}
+.gondola-facts .title{
+  font-size: 22px;
+  line-height: 36px;
+  color: #222222;
+  font-weight: 800;
+  margin-bottom: 72px;
+}
+.gondola-facts .facts p{
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.gondola-facts .facts p span{
+  font-weight: 800;
+}
+
+.gondola-facts .facts .img-wrap{
+  height: 74px;
+}
+.gondola-facts + .discover{
+  margin-top: 36px;
+}
+.gondola-facts + .discover + .Partners{
+  margin-top: 36px;
 }
 
 /*--------------------------------------------------------------
