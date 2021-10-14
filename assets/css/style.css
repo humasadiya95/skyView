@@ -467,6 +467,14 @@ button.succuss-btn, .succuss-btn{
   background: url(../img/attraction-banner.png);
   background-size: cover;
 }
+.banner-blog{
+  background: url(../img/banner-blog.png);
+  background-size: cover;
+}
+.banner-getting-here{
+  background: url(../img/banner-getting-here.png);
+  background-size: cover;
+}
 .banner .hero-section{
   position: absolute;
   max-width: 590px;
@@ -565,6 +573,26 @@ button.succuss-btn, .succuss-btn{
 }
 .explore .explore-disc .description{
   margin-bottom: 23px;
+}
+.explore .blog-desc{
+  padding: 20px;
+}
+.explore .blog-desc .title{
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 36px;
+  color: #222222;
+}
+.explore .blog-desc .description{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #222222;
+}
+.explore .blog-desc .date{
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
 }
 .explore .explore-img{
   background: #d0cccc;
@@ -1530,6 +1558,10 @@ button.succuss-btn, .succuss-btn{
 
 .text-right{
   text-align: right;
+}
+
+.transparent-background{
+  background: none!important;
 }
 /*--------------------------------------------------------------
 # bottom banner with blur css
