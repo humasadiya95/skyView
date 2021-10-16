@@ -474,6 +474,7 @@ button.succuss-btn, .succuss-btn{
 .banner-getting-here{
   background: url(../img/banner-getting-here.png);
   background-size: cover;
+  background-position: bottom;
 }
 .banner .hero-section{
   position: absolute;
@@ -495,6 +496,38 @@ button.succuss-btn, .succuss-btn{
   line-height: 62px;
 }
 
+.google-map-address{
+  background: rgba(143, 143, 143, 0.6);
+  border-radius: 10px;
+  padding: 45px 90px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 73px;
+  width: 730px;
+  height: 257px;
+  display: flex;
+  display: -webkit-flex;
+}
+.banner-getting-here .container{
+  position: relative;
+}
+.banner-getting-here .container .hero-section{
+  left: 0;
+  top: 152px;
+}
+.google-map-address .address-1 .title{
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+.google-map-address .address-1 p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
 /*--------------------------------------------------------------
 # Welcome css
 --------------------------------------------------------------*/
@@ -1193,6 +1226,90 @@ button.succuss-btn, .succuss-btn{
 }
 
 /*--------------------------------------------------------------
+# Travelling css
+--------------------------------------------------------------*/
+
+.travelling{
+  margin-top: 99px;
+}
+.travelling .traveling-inner {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.travelling .traveling-inner .details{
+  max-width: 592px;
+}
+.travelling .traveling-inner .details .title{
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 43px;
+  color: #222222;
+  margin-bottom: 29px;
+}
+.travelling .traveling-inner .details p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #222222;
+  margin-bottom: 28px;
+}
+
+.travel-km{
+  background: url(../img/trevel-km-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 101px 0;
+  margin-top: 99px;
+}
+.travel-km-inn{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.travel-km-inn .video-wrap{
+  width: 546px;
+  height: 308px;
+  overflow: hidden;
+}
+.km-inner{
+  background: rgba(143, 143, 143, 0.2);
+  padding: 58px 57px;
+  border-radius: 10px;
+  width: 445px;
+  height: 308px;
+  color: #fff;
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+}
+.km-inner .place-1 .title{
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 43px;
+  color: #ffffff;
+}
+.km-inner .place-1 p{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.km-inner .place-1 .title + p{
+  margin-bottom: 60px;
+}
+
+/*--------------------------------------------------------------
 # contact css
 --------------------------------------------------------------*/
 
@@ -1212,7 +1329,165 @@ button.succuss-btn, .succuss-btn{
   font-size: 45px;
   line-height: 48px;
 }
+.contact-options .talk {
+  display: flex;
+  display: -webkit-flex;
+}
+.contact-options .talk .list{
+  flex: 1;
+  -webkit-flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 24px 0 41px 0;
+}
+.contact-options .talk .list .title{
+  color: #3EA730;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 19px;
+}
+.contact-options .talk .list .sub-title{
+  color: #222222;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 19px;
+}
+.contact-options .talk .list .details{
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 0px;
+  max-width: 274px;
+  margin: 0 auto;
+}
+.contact-options .talk .list:first-child{
+  border-left: none;
+}
+.select-group select{
+  height: 45px;
+  border-radius: 0;
+  border: 1px solid #333333;
+  width: 100% ;
+  padding-right: 58px;
+}
+.select-group .drop-arrow{
+  width: 57px;
+  height: 45px;
+  background: #333333;
+  background-image: url('../img/down-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+.form-group label {
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+.select-group {
+  position: relative;
+}
+.select-group .drop-arrow{
+  width: 57px;
+  height: 45px;
+  background: #333333;
+  background-image: url(../img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
 
+input.form-control{
+  border-radius: 0;
+  border: 1px solid #222222;
+  height: 45px;
+}
+textarea.form-control{
+  height: 132px;
+  border-radius: 0;
+  border: 1px solid #222222;
+  resize: none;
+}
+.form-box{
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  padding: 67px 65px;
+  width: calc(100% - 405px);
+  margin-top: 92px;
+}
+.form-box .row{
+  margin-bottom: 37px;
+}
+.form-box .row:last-child{
+  margin-bottom: 0;
+}
+.form-label{
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 20px;
+  margin-bottom: 6px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.pd-r-24{
+  padding-right: 24px;
+}
+.pd-l-24{
+  padding-left: 24px;
+}
+.term-text{
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.term-text a{
+  color: #00A0E3;
+}
+.form-box .row.no-mr-btm{
+  margin-bottom: 26px;
+}
+.form-box-wrap{
+  display: flex;
+  display: -webkit-flex;
+}
+.form-box-wrap .address-details{
+  margin-top: 92px;
+  margin-left: 52px;
+}
+.address-details .title{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3EA730;
+  margin-top: 38px;
+}
+.address-details .sub-title{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+.address-details .details{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  margin-bottom: 0;
+  max-width: 270px;
+}
 
 @media (max-width: 1439px) {
   #header .logo::before{
