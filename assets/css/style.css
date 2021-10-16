@@ -476,6 +476,12 @@ button.succuss-btn, .succuss-btn{
   background-size: cover;
   background-position: bottom;
 }
+.banner-blank-green{
+  background: rgba(62, 167, 48, 0.15);
+  background-size: cover;
+  background-position: bottom;
+}
+
 .banner .hero-section{
   position: absolute;
   max-width: 590px;
