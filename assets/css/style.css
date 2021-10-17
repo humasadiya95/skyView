@@ -292,6 +292,14 @@ button.succuss-btn, .succuss-btn{
 /**
 * Desktop Navigation 
 */
+.navbar .dropdown:hover > ul{
+  /* opacity: 0 !important; */
+}
+.navbar .dropdown.parent-list:hover > ul.sub-ul-list {
+  /* opacity: 1 !important;  */
+  top: 100%;
+  /* visibility: visible; */
+}
 .navbar {
   padding: 0;
 }
@@ -326,15 +334,16 @@ button.succuss-btn, .succuss-btn{
   /* color: #01b1d7; */
 }
 .navbar .dropdown ul {
-  display: block;
+  /* display: block; */
+  display: none;
   position: absolute;
   left: 30px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
+  /* z-index: 99; */
+  /* opacity: 0; */
+  /* visibility: hidden; */
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
@@ -355,20 +364,20 @@ button.succuss-btn, .succuss-btn{
   color: #01b1d7;
 }
 .navbar .dropdown:hover > ul {
-  opacity: 1;
+  /* opacity: 1; */
   top: 100%;
-  visibility: visible;
+  /* visibility: visible; */
 }
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
+  /* opacity: 1; */
   top: 0;
   left: 100%;
-  visibility: visible;
+  /* visibility: visible; */
 }
 
 .navbar.custom-header{
@@ -376,6 +385,12 @@ button.succuss-btn, .succuss-btn{
 }
 .navbar.custom-header .parent-list{
   position: static;
+  height: 125px;
+  display: flex;
+  display: -webkit-flex;
+}
+.navbar.custom-header .parent-list a:hover{
+  color: #fff;
 }
 .navbar.custom-header .parent-list .sub-ul-list{
   width: 100%;
@@ -383,6 +398,10 @@ button.succuss-btn, .succuss-btn{
   top: 100%;
   background: #E2F2E0;
   padding: 55px 0 34px;
+  display: none;
+}
+.navbar.custom-header .dropdown.parent-list:hover .sub-ul-list{
+  display: block;
 }
 .navbar.custom-header .parent-list .sub-ul-list a{
   color: #222222;
@@ -406,6 +425,7 @@ button.succuss-btn, .succuss-btn{
   box-shadow: none;
   background: transparent;
   min-height: 92px;
+  display: block;
 }
 .navbar.custom-header .parent-list .sub-ul-list .inner-list-wrap .title{
   color: #3EA730;
