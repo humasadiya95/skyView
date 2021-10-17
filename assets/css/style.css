@@ -1861,6 +1861,10 @@ textarea.form-control{
   text-align: right;
 }
 
+.text-center{
+  text-align: right;
+}
+
 .transparent-background{
   background: none!important;
 }
@@ -1887,4 +1891,25 @@ textarea.form-control{
 
 .simple-text-section {
   margin-top: 80px;
+}
+
+/*--------------------------------------------------------------
+# social login button section css
+--------------------------------------------------------------*/
+
+.social-btn {
+  border-radius: 38px;
+  padding: 12px;
+  border: none;
+}
+.social-btn img{
+  margin-right: 10px;
+}
+.google-login-button{
+  background: #F0F0F0;
+  margin-bottom: 10px;
+}
+.facebook-login-button{
+  background: #1877F2;
+  color: #ffffff;
 }

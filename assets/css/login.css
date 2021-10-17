@@ -12,6 +12,10 @@ html,body{
         background-repeat: no-repeat;
         color: #FFFFFF;
     }
+    .register-wrap{
+        
+        background-image: url("../img/banner-register.png");
+    }
     
     .container{
     height: 100%;
