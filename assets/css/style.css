@@ -621,7 +621,7 @@ button.succuss-btn, .succuss-btn{
 }
 .explore .explore-disc {
   background: #EEEEEE;
-  padding: 36px;
+  padding: 34px;
 }
 .explore .explore-disc .title{
   font-weight: 700;
@@ -654,11 +654,12 @@ button.succuss-btn, .succuss-btn{
   line-height: 20px;
 }
 .explore .explore-img{
-  background: #d0cccc;
+  /* background: #d0cccc; */
   text-align: center;
 }
 .explore .explore-img img{
   max-width: 100%;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -986,7 +987,29 @@ button.succuss-btn, .succuss-btn{
   display: flex;
   display: -webkit-flex;
   position: relative;
+  align-items: center;
   margin-top: 64px;
+  flex-direction: row-reverse;
+  -webkit-align-items: center;
+  -webkit-flex-direction: row-reverse;
+}
+.banner-attraction.banner .hero-section .small {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  max-width: 506px;
+}
+.banner-attraction.banner .hero-section .hero-test {
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 21px;
+  max-width: 590px;
+}
+.image-card.right-img{
+  flex-direction: row;
+  -webkit-flex-direction: row;
 }
 .image-card .description{
   background: #EEEEEE;
@@ -995,8 +1018,8 @@ button.succuss-btn, .succuss-btn{
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  align-items: center;
-  -webkit-align-items: center;
+  /* align-items: center;
+  -webkit-align-items: center; */
   width: calc(100% - 340px);
   justify-content: center;
   -webkit-justify-content: center;
@@ -1004,6 +1027,18 @@ button.succuss-btn, .succuss-btn{
 .image-card .description .description-inn{
   max-width: 388px;
   margin-left: 152px;
+}
+.image-card .description .description-inn{
+  margin-left: 182px;
+  padding: 75px 65px 75px 0;
+}
+.image-card .description .description-inn.attraction-inn{
+  max-width: 100%;
+}
+.image-card.right-img .description .description-inn.attraction-inn{
+  padding: 75px 170px 75px 0;
+  margin-left: 77px;
+  max-width: 100%;
 }
 .image-card .description .description-inn .title{
   color: #3EA730;
@@ -1046,23 +1081,29 @@ button.succuss-btn, .succuss-btn{
 }
 
 .image-card .image-part{
-  position: absolute;
-  right: 0;
-  top: calc(50% - 145px);
+  position: relative;
+  left: 125px;
+  z-index: 9;
 }
 .image-card .image-part img{
-  max-height: 290px;
+  /* max-height: 290px; */
   min-width: 475px;
 }
-.image-card.right-img .description{
-  margin-left: 340px;
+.image-card .description{
+  /* margin-left: 340px; */
+  position: relative;
+  z-index: 1;
+  min-width: 750px;
 }
 .image-card.right-img .description .description-inn{
-  margin-left: 135px;
+  margin-left: 184px;
+  padding: 75px 0;
+
 } 
 .image-card.right-img .image-part{
-  left: 0;
+  left: -125px;
   right: auto;
+  z-index: 9;
 }
 
 /*--------------------------------------------------------------
@@ -1336,6 +1377,82 @@ button.succuss-btn, .succuss-btn{
 }
 
 /*--------------------------------------------------------------
+# Profile tab css
+--------------------------------------------------------------*/
+.profile-tabs{
+  margin-top: 156px;
+  
+}
+.profile-tabs-head-inn{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+    height: 199px;
+}
+.profile-tabs-head{
+  background: #222222;
+  height: 199px;
+}
+.profile-tabs-head-inn .title {
+  font-size: 23px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0;
+}
+.profile-tabs-head-inn .title + p {
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0;
+}
+.profile-tabs-head-inn #profile-tab li button {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 26px;
+}
+.profile-tabs-head-inn #profile-tab li button.active{
+  color: #3EA730;
+}
+.profile-tabs-head-inn #profile-tab{
+  border: none;
+}
+.profile-tab-in .title-in{
+  font-size: 16px;
+  color: #3EA730;
+  line-height: 22px;
+  font-weight: 800;
+  padding: 33px 0 24px;
+  margin-bottom: 0;
+}
+.profile-tab-in {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.profile-tab-in #profile-inn-tab{
+  border-bottom: none;
+}
+.profile-tab-in #profile-inn-tab button{
+  border: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0;
+  margin-right: 40px;
+  padding-bottom: 8px;
+}
+.profile-tab-in #profile-inn-tab button.active{
+  border-bottom: 3px solid #222;
+}
+/*--------------------------------------------------------------
 # contact css
 --------------------------------------------------------------*/
 
@@ -1515,6 +1632,24 @@ textarea.form-control{
   max-width: 270px;
 }
 
+
+/*--------------------------------------------------------------
+# Responsible tourism css
+--------------------------------------------------------------*/
+
+.heading-para{
+  max-width: 782px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+.black-bold{
+  font-weight: 800;
+}
+.title-bold{
+  font-weight: 800;
+}
+
+
 @media (max-width: 1439px) {
   #header .logo::before{
     width: 214px;
@@ -1532,7 +1667,7 @@ textarea.form-control{
     margin-left: 30px;
   }
   .image-card .description .description-inn{
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 }
 @media (max-width: 1366px) {

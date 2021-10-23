@@ -127,7 +127,69 @@
   </header><!-- End Header -->
 
 
-  <section class="tab-lists"></section>
+  <section class="profile-tabs">    
+      <div class="profile-tabs-head">
+        <div class="container">
+          <div class="profile-tabs-head-inn">
+            <div class="profile-head">
+              <p class="title">Arjun Mittal</p>
+              <p>member since September 2021</p>
+            </div>
+            <ul class="nav nav-tabs" id="profile-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="booking-tab" data-bs-toggle="tab" data-bs-target="#booking" type="button" role="tab" aria-controls="booking" aria-selected="true">My Bookings</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="edit-tab" data-bs-toggle="tab" data-bs-target="#edit" type="button" role="tab" aria-controls="edit" aria-selected="false">Edit Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="logout-tab" data-bs-toggle="tab" data-bs-target="#logout" type="button" role="tab" aria-controls="logout" aria-selected="false">Logout</button>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="profileTabContent">
+      <div class="tab-pane fade" id="booking" role="tabpanel" aria-labelledby="booking-tab">
+        <div class="profile-tab-in">
+          <div class="container">
+            <p class="title-in">Book A Trip</p>
+            <ul class="nav nav-tabs" id="profile-inn-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">Activities</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Skyview Accomodation</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false">Partner Experiences</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="tab-content" id="profileTabContent">
+            <div class="tab-pane fade" id="first" role="tabpanel" aria-labelledby="first-tab">
+              hhhhhhh
+            </div>
+            <div class="tab-pane fade show active" id="second" role="tabpanel" aria-labelledby="second-tab">
+              <div>
+                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">Skyview Partner Experiences</div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade show active" id="edit" role="tabpanel" aria-labelledby="edit-tab">
+        <div>
+          Edit profile
+        </div>
+      </div>
+      <div class="tab-pane fade" id="logout" role="tabpanel" aria-labelledby="logout-tab">logout</div>
+    </div>
+  </section>
+
 
   <main id="main">
 
