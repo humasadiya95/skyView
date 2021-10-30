@@ -2118,6 +2118,33 @@ textarea.form-control{
 
 }
 
+
+/*--------------------------------------------------------------
+# thanku css
+--------------------------------------------------------------*/
+.thanks-wrap .thank-taxt-inn{
+  margin-top: 60px;
+  max-width: 400px;
+}
+
+.thanks-wrap .title{
+  font-weight: 800;
+  font-size: 22.624px;
+  line-height: 160.6%;
+  display: flex;
+  align-items: center;
+  color: #222222;
+}
+.thanks-wrap p{
+  font-size: 16px;
+  line-height: 27px;
+}
+
+
+/*--------------------------------------------------------------
+# summary css
+--------------------------------------------------------------*/
+
 .summary-section {
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
 }
@@ -2137,8 +2164,8 @@ textarea.form-control{
   align-items: center;
   color: #222222;
 }
-.summary-content .green-title{
-  color: #3EA730;
+.green-title{
+  color: #3EA730!important;
 }
 .summary-content .title-secondary{
   font-weight: 800;
