@@ -1587,6 +1587,12 @@ textarea.form-control{
 .pd-l-24{
   padding-left: 24px;
 }
+.pd-r-10{
+  padding-right: 10px;
+}
+.pd-l-10{
+  padding-left: 10px;
+}
 .term-text{
   font-size: 13px;
   font-weight: 500;
@@ -1670,6 +1676,195 @@ textarea.form-control{
     /* margin-left: 0; */
   }
 }
+
+/*--------------------------------------------------------------
+# checkout form css
+--------------------------------------------------------------*/
+.form-title{
+  font-size: 23px;
+  line-height: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.checkout-inn-form{
+  margin-top: 55px;
+}
+.previous-page a{
+  color: #00A0E3;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 55px;
+  display: inline-block;
+}
+.previous-page a:before{
+  content: '';
+  background: url('../img/back-arrow.png');
+  width: 22px;
+    height: 20px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.checkout-inn-form{
+  padding-right: 95px;
+}
+.checkout-inn-form .name{
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 16px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.checkout-inn-form .name + p{
+  margin-bottom: 16px;
+}
+.form-separator{
+  border-bottom: 1px solid #222222;
+  display: block;
+  margin: 16px 0;
+}
+.checkout-inn-form input{
+  margin-bottom: 20px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.custom-checkbox {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.custom-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.custom-checkbox label {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+    color: #222222;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.custom-checkbox label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #222222;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 16px;
+  margin-bottom: 4px;
+}
+
+.custom-checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 5px;
+  height: 8px;
+  border: solid #3EA730;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.apply-filter{
+  position: relative;
+}
+.apply-filter input{
+  padding-right: 124px;
+}
+.apply-filter .apply-filter-btn{
+  background: #00A0E3;
+  height: 45px;
+  width: 122px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+}
+.payment-wrap {
+  height: 45px;
+  border: 1px solid #222222;
+  display: flex;
+  align-items: center;
+  display:-webkit- flex;
+  -webkit-align-items: center;
+  padding-left: 16px;
+  margin-bottom: 28px;
+}
+.privacy-policy-wrap{
+  background :rgba(196, 196, 196, 0.4);
+  padding: 25px;
+  margin-bottom: 28px;
+}
+
+/*--------------------------------------------------------------
+# Custom radio
+--------------------------------------------------------------*/
+
+
+/* Custom radio buttons */
+input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 28px;
+  margin-right: 15px;
+  font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+}
+  
+input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin-right: 14px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  border: 1px solid #c4c4c4;
+  background-color: #F0EFEF;
+  border-radius: 50%;
+}
+
+input[type="radio"] {
+  display: none !important;
+  *display: inline;
+}
+input[type="radio"]:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #3EA730;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
