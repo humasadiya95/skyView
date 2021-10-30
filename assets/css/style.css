@@ -2104,10 +2104,45 @@ textarea.form-control{
   margin-bottom: 14px;
   text-align: center;
 }
-
 .account-wrap .account-wrap-inn .divider{
   width: 100%;
   border-bottom: 1px solid #222222;
   margin: 40px 0 30px 0;
 
+}
+
+.divider{
+  width: 100%;
+  border-bottom: 1px solid #222222;
+  margin: 40px 0 30px 0;
+
+}
+
+.summary-section {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+}
+.summary-section .summary-section-inn{
+  margin: 60px auto;
+  max-width: 350px;
+}
+.summary-content p{
+  font-size: 16px;
+  line-height: 27px;
+}
+.summary-content .title{
+  font-weight: 800;
+  font-size: 22.624px;
+  line-height: 160.6%;
+  display: flex;
+  align-items: center;
+  color: #222222;
+}
+.summary-content .green-title{
+  color: #3EA730;
+}
+.summary-content .title-secondary{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
 }
