@@ -1688,6 +1688,7 @@ textarea.form-control{
 }
 .checkout-inn-form{
   margin-top: 55px;
+  padding-bottom: 45px;
 }
 .previous-page a{
   color: #00A0E3;
@@ -2312,6 +2313,21 @@ input[type="radio"]:checked + label:after {
   margin: 40px 0 30px 0;
 
 }
+.divider.manage-gap-mr{
+  margin: 33px 0;
+}
+.price-detail-section p{
+  margin-bottom: 3px;
+}
+.activity-summary-section .summary-content p{
+  margin-bottom: 3px;
+}
+.mr-top-16{
+  margin-top: 16px;
+}
+.mr-top-34{
+  margin-top: 34px;
+}
 
 
 /*--------------------------------------------------------------
@@ -2339,9 +2355,29 @@ input[type="radio"]:checked + label:after {
 /*--------------------------------------------------------------
 # summary css
 --------------------------------------------------------------*/
-
+.checkout-section + .Partners{
+  margin-top: 0;
+}
 .summary-section {
+  position: relative;
+}
+.activity-summary-section{
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+  padding: 48px 90px;
+  margin-top: 50px;
+  max-height: 748px;
+}
+.activity-summary-section .summary-content .title + .divider{
+  margin-top: 18px;
+  margin-bottom: 34px;
+}
+.summary-section:before{
+  content: '';
+  position: absolute;
+  background: url('../img/shadow.png');
+  left: 0;
+  width: 20px;
+  height: 100%;
 }
 .summary-section .summary-section-inn{
   margin: 60px auto;
